@@ -11,7 +11,7 @@ set(HEADERS
     "include/leet/Solution.hpp"
 )
 set(SOURCES
-    "source/Solution.cpp"
+    "source/Solution_Part01.cpp"
 )
 
 add_library(${This} ${HEADERS} ${SOURCES})
