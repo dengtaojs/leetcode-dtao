@@ -5,9 +5,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(This TestApp)
 
 set(INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
-set(HEADERS)
-set(SOURCES source/main.cpp)
 
-add_executable(${This} ${HEADERS} ${SOURCES})
+set(HEADERS
+	"include/Solution_test.hpp"
+)
+set(SOURCES 
+	"source/main.cpp"
+	"source/Solution_test.cpp"
+)
+
+add_executable(${This} ${SOURCES} ${HEADERS})
 target_include_directories(${This} PRIVATE ${INCLUDE_DIR})
 target_link_libraries(${This} PRIVATE LeetCode)

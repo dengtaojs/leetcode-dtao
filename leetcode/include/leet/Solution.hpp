@@ -20,5 +20,21 @@ namespace leet
          * @return std::vector<int> 两数之和的索引。 
          */
         auto twoSum(std::vector<int>& nums, int target) -> std::vector<int>;
+
+
+        /**
+         * @brief 第9题，回文数
+         *        给你一个整数 x ，如果 x 是一个回文整数，返回 true；否则，返回 false。
+         *        回文数是指正序和倒序读都是一样的整数。
+         *      
+         *        如果 x < 0, x 不是回文数。
+         *        如果 x = 0...9， x是回文数。
+         *        如果 x = 10..., 需要计算。
+         * 
+         * @param x 给定的整数。
+         * @return true 如果 x 是一个回文数。
+         * @return false  如果 x 不是一个回文数。
+         */
+        auto IsPalindrome(int x) -> bool;
     };
 }
