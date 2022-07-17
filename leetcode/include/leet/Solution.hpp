@@ -1,5 +1,9 @@
 #pragma once
 #include <vector>
+#include <string>
+#include <iostream>
+#include <sstream>
+#include <cctype>
 
 namespace leet
 {
@@ -24,7 +28,8 @@ namespace leet
 
         /**
          * @brief 第9题，回文数
-         *        给你一个整数 x ，如果 x 是一个回文整数，返回 true；否则，返回 false。
+         *        难度：简单
+         *        描述：给你一个整数 x ，如果 x 是一个回文整数，返回 true；否则，返回 false。
          *        回文数是指正序和倒序读都是一样的整数。
          *      
          *        如果 x < 0, x 不是回文数。
@@ -36,5 +41,6 @@ namespace leet
          * @return false  如果 x 不是一个回文数。
          */
         auto IsPalindrome(int x) -> bool;
+
     };
 }

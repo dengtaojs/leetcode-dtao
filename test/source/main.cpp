@@ -11,6 +11,6 @@ using std::vector;
 
 int main()
 {
-    test::testIsPalindrome();
+    test::testIsMatch();
     return 0;
 }

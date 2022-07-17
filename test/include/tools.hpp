@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 
-namespace tools
+namespace test::tools
 {
 	template<class T>
 	auto FormatVector(const std::vector<T> values, int maxCount = 20)

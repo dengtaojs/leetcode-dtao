@@ -55,3 +55,29 @@ Repeat:
 End:
     cout << "Test Finished!" << std::endl;
 }
+
+auto test::testIsMatch() -> void
+{
+    Solution solution;
+    cout << "Enter the function: " << __func__ << std::endl;
+Repeat:
+    cout << "Enter a input string: ";
+    std::string input; std::getline(cin, input);
+    if (input == "quit"){
+        goto End;
+    }
+    else{
+        cout << "Enter a pattern string: ";
+        std::string pattern; std::getline(cin, pattern);
+        if(pattern == "quit"){
+            goto End;
+        }
+
+        bool result = solution.isMath(input, pattern);
+        cout << format("Result = {}", result ? "True" : "False") << std::endl;
+        cout << std::endl;
+        goto Repeat;
+    }
+End:
+    cout << "Test Finished!" << std::endl;
+}
